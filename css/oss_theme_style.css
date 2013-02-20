@@ -63,15 +63,15 @@ nav .block-menu {
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
 }
 
-#block-system-main-menu a,
-#block-menu-menu-third-menu a {
+#block-system-main-menu .nav a,
+#block-menu-menu-third-menu .nav a {
   color: #000;
   display: inline;
   font-weight: bold;
 }
 
-#block-system-main-menu a:hover,
-#block-menu-menu-third-menu a:hover {
+#block-system-main-menu .nav a:hover,
+#block-menu-menu-third-menu .nav a:hover {
   background: transparent;
 }
 
@@ -172,67 +172,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-.rounded-corner .wrap-corner,
-#mini-panel-blog_side .wrap-corner {
-  background-color: #e8e7e7 !important;
-}
-
-.rounded-corner .t-edge,
-.rounded-corner .l-edge,
-.rounded-corner .r-edge,
-.rounded-corner .b-edge,
-#mini-panel-blog_side .t-edge,
-#mini-panel-blog_side .l-edge,
-#mini-panel-blog_side .r-edge,
-#mini-panel-blog_side .b-edge {
-  background: none;
-}
-
-.rounded-corner .wrap-corner .l,
-.rounded-corner .wrap-corner .r,
-#mini-panel-blog_side .wrap-corner .l,
-#mini-panel-blog_side .wrap-corner .r {
-  background-image: url(../images/corner-bits.png);
-}
-
-.rounded-corner .wrap-corner .r,
-#mini-panel-blog_side .wrap-corner .r {
-  background-position: -10px 0;
-}
-
-.rounded-corner .wrap-corner .l,
-.rounded-corner .wrap-corner .r,
-#mini-panel-blog_side .wrap-corner .l,
-#mini-panel-blog_side .wrap-corner .r {
-  top: -1px;
-}
-
-.rounded-corner .wrap-corner .l,
-#mini-panel-blog_side .wrap-corner .l {
-  left: -1px;
-}
-
-.rounded-corner .wrap-corner .b-edge .l,
-.rounded-corner .wrap-corner .b-edge .r,
-#mini-panel-blog_side .wrap-corner .b-edge .l,
-#mini-panel-blog_side .wrap-corner .b-edge .r {
-  top: 1px;
-}
-
-.rounded-corner .wrap-corner .b-edge .r,
-#mini-panel-blog_side .wrap-corner .b-edge .r {
-  background-position: -10px -11px;
-}
-
-.rounded-corner .wrap-corner .r-edge,
-#mini-panel-blog_side .wrap-corner .r-edge {
-  padding: 0 15px;
-}
-
-#mini-panel-blog_side .rounded-corner {
-  margin-bottom: 15px;
-}
-
 .pane-node {
   color: #46555a;
   line-height: 16px;
@@ -243,16 +182,231 @@ a:hover {
 }
 
 .pane-node.actual-projects {
-  padding-top: 10px;
-  margin: -11px -15px;
+  background: url('../images/actual-projects-bg.png') no-repeat 0 0;
+  background-size: 100% auto;
+  min-height: 533px;
   padding: 14px;
-  background: #ccc;
-  z-index: 50;
+  padding-top: 10px;
   position: relative;
+  z-index: 50;
+}
+
+.pane-node.actual-projects h2 {
+  margin-bottom: 23px;
+  margin-top: 5px;
 }
 
 .pane-node.actual-projects h4 {
   font-size: 18px;
   font-weight: bold;
+  line-height: 22px;
+  margin: 0 0 5px 0;
+}
+
+.pane-blogentries h3 {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
   margin: 0;
+  padding: 0;
+}
+
+.pane-blogentries .views-row {
+  margin-bottom: 5px;
+}
+
+.pane-archive ul {
+  margin: 0;
+}
+
+.pane-archive li {
+  list-style: none;
+}
+
+.pane-tagclouds-1 .pane-content {
+  line-height: 24px;
+}
+
+.mailchimp-newsletter-wrapper .form-type-item > .controls,
+.mailchimp-newsletter-wrapper .control-label {
+  display: none;
+}
+
+.pane-mailchimp-lists-open-source-software .pane-content {
+  margin-top: -7px;
+}
+
+.mailchimp-newsletter-wrapper input[type=text] {
+  color: #333;
+  font-size: 13px;
+  margin-bottom: 0;
+  width: 95%;
+}
+
+.mailchimp-lists-user-subscribe-form {
+  margin-bottom: 5px;
+}
+
+.mailchimp-lists-user-subscribe-form button.btn {
+  margin-top: -2px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #499ebf;
+  background-image: none;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #418ba7;
+}
+
+.btn {
+  font-size: 13px;
+}
+
+.pane-menu-menu-services a {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.pane-menu-menu-services a:hover,
+.pane-menu-menu-services li:hover,
+.pane-menu-menu-blog-kategorier a:hover,
+.pane-menu-menu-blog-kategorier li:hover {
+  background: transparent !important;
+}
+
+.node-type-basic-page {
+  color: #4e5c61;
+  line-height: 18px;
+}
+
+.node-type-basic-page .rounded-corner {
+  margin-bottom: 15px;
+}
+
+.breadcrumb {
+  background: #e8e7e7;
+}
+
+.pane-menu-menu-blog-kategorier .pane-title,
+.panels-flexible-region-left_center-center .pane-title {
+  margin-bottom: 18px;
+}
+
+.pane-menu-menu-blog-kategorier a {
+  font-weight: bold;
+  line-height: 14px;
+}
+
+.pane-menu-menu-blog-kategorier li {
+  margin-bottom: 8px;
+}
+
+.pane-menu-menu-blog-kategorier ul {
+  margin-bottom: 0;
+}
+
+.pane-yammer-feeds-yammer-feeds .pane-title {
+  background: #818924;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 15px;
+  background: #818924;
+  background: -moz-linear-gradient(left,  #818924 0%, #b9c15c 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#818924), color-stop(100%,#b9c15c));
+  background: -webkit-linear-gradient(left,  #818924 0%,#b9c15c 100%);
+  background: -o-linear-gradient(left,  #818924 0%,#b9c15c 100%);
+  background: -ms-linear-gradient(left,  #818924 0%,#b9c15c 100%);
+  background: linear-gradient(to right,  #818924 0%,#b9c15c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818924', endColorstr='#b9c15c',GradientType=1 );
+}
+
+body.toolbar-drawer.logged-in .navbar-fixed-top {
+  margin-top: 66px;
+  position: inherit;
+  z-index: 0;
+}
+
+#block-menu-menu-secondary-menu {
+  clear: both;
+}
+
+
+.block-custom-search-blocks .search-form > div {
+  background: url('../images/ting-bg.png') no-repeat right 14px;
+  float: right;
+  height: 38px;
+  margin-top: -20px;
+  padding-top: 56px;
+  width: 250px;
+}
+
+.block-custom-search-blocks .custom-search-box {
+  border-radius: 20px;
+  float: left;
+  font-size: 13px;
+  width: 180px;
+}
+
+.block-custom-search-blocks .control-group {
+  margin-bottom: 0;
+}
+
+.block-custom-search-blocks button.btn {
+  margin: 0;
+}
+
+#block-menu-menu-secondary-menu .nav {
+  margin: 0;
+}
+
+#block-menu-menu-secondary-menu .nav a {
+  color: #1f9dd8;
+  font-weight: bold;
+  padding: 0 0 0 20px;
+  text-shadow: none;
+}
+
+.yammer-login .pane-content a {
+  background: url('../images/login-bg.png') no-repeat 0 0;
+  background-size: 100% auto;
+  display: block;
+  height: auto;
+  min-height: 80px;
+  text-indent: -9000px;
+  width: 100%;
+  
+}
+
+.panels-flexible-region-servicepages-toleft .pane-blogentries .pane-title {
+  display: none;
+}
+
+.panels-flexible-region-servicepages-toleft .pane-blogentries h3 a {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.panels-flexible-region-servicepages-toleft .pane-blogentries .views-field-body {
+  line-height: 18px;
+}
+
+.panels-flexible-region-servicepages-toleft .pane-blogentries .views-field-body p {
+  margin: 0;
+}
+
+.panels-flexible-region-servicepages-toleft .pane-blogentries .views-row {
+  border-bottom: 4px solid #d0e02b;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }

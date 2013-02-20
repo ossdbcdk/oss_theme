@@ -17,3 +17,5 @@ stylesheets[all][] = css/oss_theme_style.css
 
 settings[toggle_name] = 0
 settings[toggle_search] = 1
+
+scripts[0] = 'js/oss.js'
