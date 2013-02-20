@@ -294,6 +294,7 @@ a:hover {
 
 .breadcrumb {
   background: #e8e7e7;
+  display: none;
 }
 
 .pane-menu-menu-blog-kategorier .pane-title,
@@ -307,7 +308,36 @@ a:hover {
 }
 
 .pane-menu-menu-blog-kategorier li {
+  float: left;
+}
+
+.pane-menu-menu-blog-kategorier li a {
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  height: 25px;
+  font-weight: bold;
+  line-height: 25px;
   margin-bottom: 8px;
+  margin-right: 10px;
+  padding: 0 10px;
+  background: #499ebf;
+}
+
+.pane-menu-menu-blog-kategorier li a.active {
+  background: #f0752b;
+}
+
+.pane-menu-menu-blog-kategorier li a.active:hover {
+  background: #d86926 !important;
+}
+
+.pane-menu-menu-blog-kategorier li a:hover {
+  background: #418ba7 !important;
+}
+
+.pane-menu-menu-blog-kategorier li a {
+  color: #fff;
 }
 
 .pane-menu-menu-blog-kategorier ul {
@@ -406,6 +436,84 @@ body.toolbar-drawer.logged-in .navbar-fixed-top {
 }
 
 .panels-flexible-region-servicepages-toleft .pane-blogentries .views-row {
+  border-bottom: 4px solid #d0e02b;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.blog-category .panels-flexible-left_center {
+  padding-top: 35px;
+  position: relative;
+}
+
+.node-type-blog .panels-flexible-blog_entry,
+.page-blog .panels-flexible-servicepages {
+  padding-top: 35px;
+  position: relative;
+}
+
+.node-type-blog .pane-menu-menu-blog-kategorier,
+.page-blog .pane-menu-menu-blog-kategorier,
+.blog-category .pane-menu-menu-blog-kategorier {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-blog .pane-menu-menu-blog-kategorier {
+  top: -45px;
+}
+
+.footer {
+  background: #f2f1f1;
+  border: none;
+  padding: 20px 10px;
+}
+
+.region-footer {
+  border-top: 4px solid #d0e02b;
+  padding-top: 20px;
+}
+
+.footer .block-title {
+  display: none;
+}
+
+.footer section {
+  float: left;
+  margin-right: .3em;
+  width: 33%;
+}
+
+.dbc-logo {
+  background: url('../images/dbc-logo.png') no-repeat 0 0;
+  display: block;
+  height: 22px;
+  text-indent: -9000px;
+  width: 92px;
+}
+
+.page-search ol {
+  margin: 0;
+}
+
+.page-search ol li {
+  list-style: none;
+}
+
+.page-search .pane-search-result h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  margin: 0;
+}
+
+.page-search .pane-search-result h3 a {
+  color: #000;
+}
+
+.page-search .pane-search-result li {
   border-bottom: 4px solid #d0e02b;
   margin-bottom: 8px;
   padding-bottom: 8px;
