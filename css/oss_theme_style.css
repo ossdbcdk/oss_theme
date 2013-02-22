@@ -621,7 +621,8 @@ body.toolbar-drawer.logged-in .navbar-fixed-top {
   line-height: 18px;
 }
 
-.page-archive .views-row {
+.page-archive .views-row,
+.pane-url .views-row {
   border-bottom: 4px solid #d0e02b;
   margin-bottom: 8px;
   overflow: hidden;
@@ -639,4 +640,15 @@ body.toolbar-drawer.logged-in .navbar-fixed-top {
 
 .comment-wrapper h2.title {
   background: #f5f5f5;
+}
+
+.pane-url .views-field-title {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pane-url .views-field-field-url-description {
+  color: #000;
+  line-height: 18px;
 }
