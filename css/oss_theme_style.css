@@ -396,6 +396,8 @@ a:hover {
 .page-blog .pane-blog-posts .submitted,
 .page-taxonomy-term .node-blog .submitted ,
 .node-type-blog .submitted,
+.view-faq .submitted,
+.node-type-basic-page .submitted,
 .links .blog_usernames_blog,
 .page-archive .submitted,
 .page-search .search-info {
