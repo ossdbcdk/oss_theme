@@ -274,7 +274,8 @@ a:hover {
   font-size: 13px;
 }
 
-.pane-menu-menu-services a {
+.pane-menu-menu-services a,
+.pane-menu-menu-linked-data a {
   font-weight: bold;
   line-height: 18px;
 }
@@ -282,7 +283,10 @@ a:hover {
 .pane-menu-menu-services a:hover,
 .pane-menu-menu-services li:hover,
 .pane-menu-menu-blog-kategorier a:hover,
-.pane-menu-menu-blog-kategorier li:hover {
+.pane-menu-menu-blog-kategorier li:hover,
+.pane-menu-menu-linked-data a:hover,
+.pane-menu-menu-linked-data li:hover,
+ {
   background: transparent !important;
 }
 
